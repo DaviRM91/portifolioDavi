@@ -1,0 +1,249 @@
+
+
+/*geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(218, 240, 218);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    font-size: 30px;
+    text-align: center;
+}
+
+button:hover, form .enviar input:hover{
+    box-shadow: 0px 0px 8px rgb(133, 172, 224);
+    transform: scale(1.05);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*cabeçalho*/
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #575757;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+}
+
+header a:hover{
+    color: black;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 100px;
+}
+
+header .botao-contato button{
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: rgb(144, 167, 197);
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+
+.logo{
+    font-size: 45px;
+}
+
+/*estilo home*/
+
+section.home{
+    padding: 40px 4%;
+}
+
+section.home .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.home .texto-home .midia-social button{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(144, 167, 197);
+    font-size: 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+
+
+.home .texto-home p{
+    margin: 40px 0;
+}
+/*estilo projetos*/
+
+section .projetos{
+    padding: 80px 4%;
+}
+
+
+.projetos .projetos-box{
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(201, 250, 200);
+    margin-top: 60px;
+    transition: 0.5s;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.projetos .projetos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(73, 161, 72, 0.534) ;
+}
+
+.projetos .projetos-box i{
+    font-size: 65px;
+}
+
+.projetos .projetos-box h3{
+    font-size: 23px;
+    margin: 13px 0;
+}
+
+/*ESTILO CONTATO*/
+
+section.contato{
+    padding: 80px 4%;   
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.884);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+form textarea{
+    resize: none;
+}
+
+form .enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .enviar input[type=submit]{
+    width: 120px;
+    background-color: rgb(144, 167, 197);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/*estilo rodapé*/
+
+footer{
+    padding-top: 60px ;
+    padding-bottom: 15px ;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .email p{
+    color: black;
+    font-size: 18px;
+}
+
+footer .email i{
+    font-size: 20px;
+}
+
+footer .email a{
+    color: #000000;
+}
+
+/*estilo Formação*/
+
+section .form{
+    padding: 40px 4%;
+    margin-bottom: 100px;
+}
+
+/*respomsividade para mobile*/
+
+@media screen and (max-width: 1021px){
+    /*geral*/
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    /*cabeçalho*/
+    
+
+    /*home*/
+    .home .imagem-home img{
+        width: 100%;
+        height: 100%;
+    }
+
+    section.home .flex{
+        gap: 40px;
+    }
+}
